@@ -28,6 +28,11 @@ public class GameTile{
     button2 = new Button(100, Color.BLUE);
     button3 = new Button(100, Color.RED);
     button4 = new Button(100, Color.YELLOW);
+    
+    button1.getActionListener();
+    button2.getActionListener();
+    button3.getActionListener();
+    button4.getActionListener();
 
     thePanel.add(button1);
     thePanel.add(button2);
