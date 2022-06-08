@@ -20,5 +20,16 @@ public class Button extends JButton{
   public void getColor(Color theColor){
     this.setBorder(BorderFactory.createLineBorder(theColor.darker(), 2));
   }
+  
+  public void getActionListener(){
+        ActionListener buttonListener = new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (e.getSource() == this){
+                    System.out.print("Hello World");
+                }
+            }
+        };
+    }
 
 }
